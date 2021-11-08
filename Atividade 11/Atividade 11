@@ -1,0 +1,560 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MaterialApp(home: PrimeiraRota()));
+
+class PrimeiraRota extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Álbum"),
+        backgroundColor: Colors.green,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: <Widget>[
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => PrimeiraImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => SegundaImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => TerceiraImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => QuartaImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => QuintaImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => SextaImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => SetimaImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => OitavaImagem()),
+                );
+              },
+            ),
+            TextButton(
+              style: ButtonStyle(
+                padding:
+                    MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+              ),
+              child: Image.network('https://picsum.photos/250?image=9'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => NonaImagem()),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: null,
+        tooltip: "Exemplo botão",
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class PrimeiraImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Primeira Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'Primeira Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class SegundaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Segunda Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'segunda Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class TerceiraImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Terceira Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'Terceira Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class QuartaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Quarta Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'quarta Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class QuintaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Quinta Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'Quinta Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class SextaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Sexta Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'sexta Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class SetimaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Setima Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'setima Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class OitavaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Oitava Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'Oitava Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
+
+class NonaImagem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Nona Imagem"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                'nona Imagem',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
+              margin: EdgeInsets.all(80),
+            ),
+            Container(
+              child: Text(
+                'Texto descritivo',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
+    );
+  }
+}
