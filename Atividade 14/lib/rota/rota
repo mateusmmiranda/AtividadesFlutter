@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'tela/tela';
+import 'componente/componente';
+
+class PrimeiraTela extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    Corpo corpo = Corpo('1');
+    Botao botao = Botao('Segunda');
+    return Tela('Primeira Tela', corpo, botao);
+  }  
+}
+
+class SegundaTela extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    Corpo corpo = Corpo('2');
+    Botao botao = Botoes('Terceira');
+    return Tela('Segunda Tela', corpo, botoes);
+  }  
+}
+
+class TerceiraTela extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    Corpo corpo = Corpo('3');
+    Botao botao = Botoes('');
+    return Tela('Terceira Tela', corpo, botoes);
+  }  
+}
