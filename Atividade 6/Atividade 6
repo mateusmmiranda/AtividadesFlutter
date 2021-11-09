@@ -1,0 +1,46 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: SizedBox(
+        width: 250,
+        height: 250,
+        child: Stack(
+          textDirection: TextDirection.ltr,
+          children: <Widget>[
+            Container(
+              width: 250,
+              height: 250,
+              color: Colors.white,
+            ),
+            
+            Container(
+              padding: EdgeInsets.all(5.0),
+              alignment: Alignment.center,
+              
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: <Color>[
+                    Colors.red.withAlpha(0),
+                    Colors.pink,
+                    Colors.blue
+                  ],
+                ),
+              ),
+              child: Image(
+              image: NetworkImage(
+                'https://66.media.tumblr.com/5dd57c2cb2e5801f662bf8c8a7fa91ab/c073e7987cb0c13a-be/s500x750/4919f4c52044d0e2654f92f6fc28c190c1ac8f52.gif',
+              ),
+              
+              ),
+            ),
+            
+          ],
+        ),
+      ),
+    ),
+  );
+}
